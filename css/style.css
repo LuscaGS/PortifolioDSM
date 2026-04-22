@@ -1,15 +1,17 @@
-/* RESET BASE */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* FUNDO COM GRADIENTE AZUL PROFUNDO */
+/* FUNDO */
 body {
-    background: linear-gradient(120deg, #0a192f, #1e293b, #f97316);
-    background-size: 200% 200%;
-    color: #f1f5f9;
+    background: linear-gradient(135deg, #1a0b2e, #2e1065, #f97316);
+    color: #f8fafc;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    padding: 40px;
 }
 
 /* CONTAINER */
@@ -24,61 +26,67 @@ header {
     margin-bottom: 40px;
 }
 
-/* FOTO COM GLOW LARANJA */
+/* FOTO */
 .profile-img {
     width: 150px;
     border-radius: 50%;
     border: 3px solid #f97316;
-    box-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.6);
 }
 
-/* TITULOS COM GRADIENTE */
+/* TITULO */
 h1 {
     font-size: 2.5rem;
-    background: linear-gradient(90deg, #38bdf8, #f97316);
+    background: linear-gradient(90deg, #ffffff, #f97316);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    color: #38bdf8;
+    color: #f97316;
     margin-bottom: 10px;
 }
 
-/* GRID DE CARDS */
+/* CARDS */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
 }
 
-/* CARD MODERNO */
+/* CARD */
 .card {
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(249, 115, 22, 0.2);
+    background: rgba(30, 10, 60, 0.7);
+    border: 1px solid rgba(249, 115, 22, 0.3);
     padding: 20px;
     border-radius: 12px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     transition: 0.3s;
 }
 
-/* HOVER COM GLOW LARANJA */
 .card:hover {
     transform: translateY(-5px);
-    border-color: #f97316;
-    box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.5);
+}
+
+/* TEXTOS */
+p {
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 /* LINKS */
 a {
-    color: #38bdf8;
+    color: #f97316;
     text-decoration: none;
 }
 
 a:hover {
-    color: #f97316;
-    text-decoration: underline;
+    color: #c084fc;
 }
 
 /* BOTÕES */
@@ -90,8 +98,8 @@ a:hover {
 }
 
 .btn {
-    background: linear-gradient(90deg, #38bdf8, #f97316);
-    color: #020617;
+    background: linear-gradient(90deg, #f97316, #a855f7);
+    color: #fff;
     padding: 12px 18px;
     border-radius: 8px;
     font-weight: bold;
@@ -99,17 +107,15 @@ a:hover {
     transition: 0.3s;
 }
 
-/* HOVER BOTÃO */
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 12px rgba(249, 115, 22, 0.6);
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.7);
 }
 
-/* ESPAÇAMENTO ENTRE SEÇÕES */
+/* ESPAÇO ENTRE SEÇÕES */
 section {
     margin-bottom: 40px;
 }
-
 /* TEXTOS */
 p {
     margin-bottom: 10px;
